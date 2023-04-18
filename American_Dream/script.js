@@ -1,65 +1,51 @@
-/**
- * Created by Kupletsky Sergey on 05.11.14.
- *
- * Material Design Responsive Table
- * Tested on Win8.1 with browsers: Chrome 37, Firefox 32, Opera 25, IE 11, Safari 5.1.7
- * You can use this table in Bootstrap (v3) projects. Material Design Responsive Table CSS-style will override basic bootstrap style.
- * JS used only for table constructor: you don't need it in your project
- */
+tabControl();
 
-$(document).ready(function() {
-
-    var table = $('#table');
-
-    // Table bordered
-    $('#table-bordered').change(function() {
-        var value = $( this ).val();
-        table.removeClass('table-bordered').addClass(value);
-    });
-
-    // Table striped
-    $('#table-striped').change(function() {
-        var value = $( this ).val();
-        table.removeClass('table-striped').addClass(value);
-    });
-  
-    // Table hover
-    $('#table-hover').change(function() {
-        var value = $( this ).val();
-        table.removeClass('table-hover').addClass(value);
-    });
-
-    // Table color
-    $('#table-color').change(function() {
-        var value = $(this).val();
-        table.removeClass(/^table-mc-/).addClass(value);
-    });
+/*
+We also apply the switch when a viewport change is detected on the fly
+(e.g. when you resize the browser window or flip your device from 
+portrait mode to landscape). We set a timer with a small delay to run 
+it only once when the resizing ends. It's not perfect, but it's better
+than have it running constantly during the action of resizing.
+*/
+var resizeTimer;
+$(window).on('resize', function(e) {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(function() {
+    tabControl();
+  }, 250);
 });
 
-// jQuery’s hasClass and removeClass on steroids
-// by Nikita Vasilyev
-// https://github.com/NV/jquery-regexp-classes
-(function(removeClass) {
-
-	jQuery.fn.removeClass = function( value ) {
-		if ( value && typeof value.test === "function" ) {
-			for ( var i = 0, l = this.length; i < l; i++ ) {
-				var elem = this[i];
-				if ( elem.nodeType === 1 && elem.className ) {
-					var classNames = elem.className.split( /\s+/ );
-
-					for ( var n = classNames.length; n--; ) {
-						if ( value.test(classNames[n]) ) {
-							classNames.splice(n, 1);
-						}
-					}
-					elem.className = jQuery.trim( classNames.join(" ") );
-				}
-			}
-		} else {
-			removeClass.call(this, value);
-		}
-		return this;
-	}
-
-})(jQuery.fn.removeClass);
+/*
+The function below is responsible for switching the tabs when clicked.
+It switches both the tabs and the accordion buttons even if 
+only the one or the other can be visible on a screen. We prefer
+that in order to have a consistent selection in case the viewport
+changes (e.g. when you esize the browser window or flip your 
+device from portrait mode to landscape).
+*/
+function tabControl() {
+  var tabs = $('.tabbed-content').find('.tabs');
+  if(tabs.is(':visible')) {
+    tabs.find('a').on('click', function(event) {
+      event.preventDefault();
+      var target = $(this).attr('href'),
+          tabs = $(this).parents('.tabs'),
+          buttons = tabs.find('a'),
+          item = tabs.parents('.tabbed-content').find('.item');
+      buttons.removeClass('active');
+      item.removeClass('active');
+      $(this).addClass('active');
+      $(target).addClass('active');
+    });
+  } else {
+    $('.item').on('click', function() {
+      var container = $(this).parents('.tabbed-content'),
+          currId = $(this).attr('id'),
+          items = container.find('.item');
+      container.find('.tabs a').removeClass('active');
+      items.removeClass('active');
+      $(this).addClass('active');
+      container.find('.tabs a[href$="#'+ currId +'"]').addClass('active');
+    });
+  } 
+}
