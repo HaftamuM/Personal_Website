@@ -1,0 +1,158 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: Courier, monospace;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  text-align: center;
+  color: #080808;
+  background: #ebe9e9;
+}
+
+/* Typography */
+.title, .subtitle {
+  margin: 1rem;
+}
+.title {
+  font-family: "VT323", monospace;
+  font-size: 2.2em;
+  letter-spacing: 5px;
+}
+.footnote {
+  font-size: 0.9em;
+  position: absolute;
+  right: 0.5em;
+  bottom: 0.2em;
+}
+
+/* Layout */
+.grid {
+  display: grid;
+  margin: 2rem auto 4rem;
+
+  grid-row-gap: 2rem;
+  justify-content: center;
+}
+
+/* Icons */
+.pacman {
+  width: 0px;
+  height: 0px;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: rotate(0deg);
+  border-top: 50px solid #d8d800;
+  border-right: 50px solid #d8d800;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid #d8d800;
+  border-radius: 50%;
+}
+
+.icon {
+  font-size: 4em;
+  line-height: 100px;
+  position: relative;
+  width: 100px;
+  height: 90px;
+  color: #ffffff;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.icon:after {
+    position: absolute;
+    bottom: -50px;
+    display: block;
+    width: 100px;
+    height: 50px;
+    content: "";
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+  }
+
+.icon.github {
+    background: #d80000;
+  }
+
+.icon.github:after {
+      background: linear-gradient(-45deg, transparent 75%, #d80000 75%) 0 50%,
+      linear-gradient(45deg, transparent 75%, #d80000 75%) 0 50%;
+      background-size: 33px 60px;
+    }
+
+.icon.codepen {
+    background: #ff99ab;
+  }
+
+.icon.codepen:after {
+      background: linear-gradient(-45deg, transparent 75%, #ff99ab 75%) 0 50%,
+      linear-gradient(45deg, transparent 75%, #ff99ab 75%) 0 50%;
+      background-size: 33px 60px;
+    }
+
+.icon.twitter {
+    background: #00cccc;
+  }
+
+.icon.twitter:after {
+      background: linear-gradient(-45deg, transparent 75%, #00cccc 75%) 0 50%,
+      linear-gradient(45deg, transparent 75%, #00cccc 75%) 0 50%;
+      background-size: 33px 60px;
+    }
+
+.icon.linkedin {
+    background: #d88c00;
+  }
+
+.icon.linkedin:after {
+      background: linear-gradient(-45deg, transparent 75%, #d88c00 75%) 0 50%,
+      linear-gradient(45deg, transparent 75%, #d88c00 75%) 0 50%;
+      background-size: 33px 60px;
+    }
+
+.icon:hover .fa {
+      -webkit-animation: bounce 0.3s linear infinite;
+              animation: bounce 0.3s linear infinite;
+    }
+
+.icon:hover:after {
+      transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      background-position: 50px 0;
+    }
+
+/* animation */
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* media queries */
+@media screen and (min-width: 640px) {
+  .grid {
+    max-width: 550px;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 1em;
+  }
+  .pacman {
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: rotate(-90deg);
+  }
+}
