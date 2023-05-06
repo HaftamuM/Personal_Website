@@ -46,3 +46,12 @@ $(document).ready(function() {
    });
    // Baro 
    
+
+
+   // Add 
+   $(document).ready(function(){
+	$(".humberger-icon").click(function(){
+	  $(this).toggleClass("cross");
+	  $('.menubar').slideToggle();
+	});
+  });

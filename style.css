@@ -1474,4 +1474,24 @@ Custom media queries
 @media (max-width: 950px) { 
 
 }
-	
+/* ADD */
+.humberger-icon {display: inline-block;
+	cursor: pointer;}
+  .icon1, .icon2, .icon3 {background-color: #FFF;width: 35px;height: 5px;margin: 6px 0;transition: 0.4s;}
+  
+  .cross .icon1 {-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);}
+  
+  .cross .icon2 {opacity: 0;}
+  
+  .cross .icon3 {-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);}
+  
+  header{background:#141313;padding:10px;position:relative;z-index: 100}
+  header .container{display:flex;justify-content:space-between;align-items:center;}
+  header .logo{}
+  header .logo h2{color:#ffffff;text-transform:uppercase;letter-spacing:1px;}
+  header .container{padding:20px 30px;}
+  header .menubar{display:none;position:absolute;top:100%;background:#000;width:100%;margin:0px;left:0px;padding:0px}
+  header .menubar li{padding:10px;list-style:none;}
+  header .menubar li a{ color:#ffffff;text-decoration:none;font-size:30px;text-transform:uppercase; text-align: center; }
