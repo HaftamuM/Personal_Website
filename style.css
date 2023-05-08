@@ -1471,8 +1471,8 @@ The navbar toggle appears at this breakpoint */
 Custom media queries
 */
 
-@media (max-width: 950px) { 
-s
+@media (max-width: 950px)  { 
+
 }
 /* ADD */
 .humberger-icon {display: inline-block;
@@ -1493,10 +1493,13 @@ s
   header .logo h2{color:#ffffff;text-transform:uppercase;letter-spacing:1px;}
   header .container{padding:20px 30px;}
   header .menubar{display:none;position:absolute;top:100%;background:#cec9c9;width:100%;margin:0px;left:0px;padding:0px}
-  header .menubar li{padding:10px;list-style:none;}
-  header .menubar li a{ color:#050505;text-decoration:none;font-size:30px;text-transform:uppercase; text-align: center; }
+  header .menubar li{padding:4px;list-style:none;}
+  header .menubar li a{ color:#050505;font-size:30px;text-transform:uppercase; text-align: center; }
 
   a:hover 
   { 
 	background-color: rgb(255, 255, 255);
   }
+
+  /** Change two **/
+  

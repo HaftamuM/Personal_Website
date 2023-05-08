@@ -55,3 +55,7 @@ $(document).ready(function() {
 	  $('.menubar').slideToggle();
 	});
   });
+
+
+  // Add to a new card 
+  
