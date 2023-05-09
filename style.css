@@ -3,7 +3,7 @@
   font-weight: 300;
 }
 
-.header .header__contact .header__contact-label, .btn, h1, h2, h3, h4 h6 {
+.header .header__contact .header__contact-label, .btn, h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", serif;
   font-weight: 400;
 }
@@ -73,7 +73,7 @@ a:hover {
 }
 .header h2 {
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.25em;
 }
 .header .header__contact {
   flex: 0 0 auto;
@@ -106,7 +106,6 @@ a:hover {
   flex: 0 0 auto;
   width: 25%;
 }
-/** New Card **/
 .experience-list {
   padding-bottom: 0.5em;
   border-bottom: 2px solid #000000;
@@ -232,13 +231,11 @@ a:hover {
   position: fixed;
   bottom: 1em;
   right: 1em;
-  height: 245mm;
-  width: 200mm;
   background-color: #000000;
   border-radius: 50%;
-  height: 2em;
-  width: 2em;
-  font-size: 1.5em;
+  height: 3em;
+  width: 3em;
+  font-size: 3em;
   color: white;
   cursor: hand;
   cursor: pointer;
