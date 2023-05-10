@@ -536,7 +536,7 @@ div.card.show div.flap2 {
 }
 
 .icon-plus:before, .icon-minus:before {
-  color: #8cc;
+  color: rgb(17, 17, 17);
   position: relative;
   top: 40%;
   left: 42%;
@@ -552,7 +552,7 @@ div.card.show div.flap2 {
 }
 
 .menu-item-back {
-  background: #8cc;
+  background: rgb(177, 160, 160);
   width: 175px;
   height: 150px;
   position: absolute;
