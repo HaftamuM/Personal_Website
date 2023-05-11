@@ -46,3 +46,5 @@ $(document).ready(function(){
     
   });
 });
+
+// Add on the table for baro 
