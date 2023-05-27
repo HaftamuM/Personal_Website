@@ -41,7 +41,7 @@ a:hover {
 
 .btn {
   display: inline-block;
-  background-color: black;
+  background-color: rgb(140, 201, 0);
   color: white;
   text-transform: uppercase;
   padding: 0.25em 0.5em;
@@ -339,7 +339,7 @@ a:hover {
 a.btn {
   background: #0a0a0a;
   border-radius: 4px;
-  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 0px 0 rgba(10, 10, 10, 0.25);
   color: #bdbcbc;
   display: inline-block;
   padding: 6px 30px 8px;
