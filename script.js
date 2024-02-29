@@ -1,1 +1,9 @@
-// Uses rem for size so go ahead and change the font-size of html and see the buttons get bigger (or smaller...) :)
+$(window).resize(function() { 
+  
+  if ($(window).width() > 928) {
+    $('aside').height($('section').height())
+  } else {
+    $('aside').height('auto')
+  }
+   
+});
