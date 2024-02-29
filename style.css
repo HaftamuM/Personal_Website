@@ -239,6 +239,7 @@ aside a:hover, aside a:focus {
     border-top: 1px solid #ccc;
   }
 }
+/** Read more btn **/
 .btn {
   display: inline-block;
   background-color: #fffefe;
