@@ -1142,7 +1142,7 @@ footer .footer__social a:hover {
   }
 
   .services__container {
-    grid-template-columns: repeat(3, 218px);
+    grid-template-columns: repeat(4, 218px);
     justify-content: center;
   }
 
