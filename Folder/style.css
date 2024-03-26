@@ -15,7 +15,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgb(242, 243, 248);
+        background: rgb(255, 255, 255);
         width: 100vw;
         height: 100vh;
         overflow: hidden;
@@ -27,7 +27,7 @@
         position: absolute;
         width: 150px;
         z-index: 100;
-        background: linear-gradient(90deg, rgb(242, 243, 248) 0%, rgba(242, 243, 248,0) 100%);
+        background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(242, 243, 248,0) 100%);
         pointer-events: none;
     }
     .content:before {
@@ -38,13 +38,13 @@
         position: absolute;
         width: 150px;
         z-index: 100;
-        background: linear-gradient(90deg, rgba(242, 243, 248,0) 0%, rgba(242, 243, 248,1) 100%);
+        background: linear-gradient(90deg, rgba(242, 243, 248,0) 0%, rgb(255, 255, 255) 100%);
     }
     .btn {
         min-width: 60px;
         height: 60px;
         border-radius: 20px;
-        background: #fff;
+        background: #e6e4e4;
         border: 0px;
         outline: none;
         cursor: pointer;
@@ -66,7 +66,7 @@
         justify-content: flex-start;
         width: 100%;
         overflow: auto;
-        padding-top: 80px;
+        padding-top: 100px;
         padding-left:60px;
         padding-right: 50px;
         scroll-behavior: smooth
@@ -85,7 +85,7 @@
         width: 300px;
         min-width: 300px;
         height: auto;
-        background: #fff;
+        background: #e6e4e4;
         border-radius: 30px;
         position: relative;
         z-index: 10;
@@ -94,7 +94,9 @@
         transition: all .25s ease;
         box-shadow: 0px 0px 0px 0px rgba(0,0,0,.08);
         cursor: pointer;
-   
+        display: flexbox;
+        margin-left: 4%;
+        margin-right: 3% 
     }
     .card:hover {
         transform: translate(0, -10px);
