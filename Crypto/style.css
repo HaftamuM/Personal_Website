@@ -10,12 +10,12 @@ body {
 
 .img-container {
  display: flex;
- padding-top:350px;
+ padding-top: 370px;
 
 }
 .img-container img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 15px;
   cursor: pointer;
   transition: all 0.3s;
