@@ -14,16 +14,16 @@ body {
 
 }
 .img-container img {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 15px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.2s;
   
 }
 
 .img-container img:not(:last-child) {
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 /* The Magic ✨ 
@@ -38,8 +38,8 @@ body {
 .img-container img:hover{
   opacity: 1;
 }
-/***Add css **/
-
+/***Add css
+<!--
 .login-box {
   position: absolute;
 
@@ -197,4 +197,4 @@ body {
   50%,100% {
     bottom: 100%;
   }
-}
+}**/
