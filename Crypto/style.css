@@ -11,11 +11,11 @@ body {
 }
 
 .img-container img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 15px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 
 .img-container img:not(:last-child) {
