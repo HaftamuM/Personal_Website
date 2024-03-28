@@ -66,7 +66,7 @@
         justify-content: flex-start;
         width: 100%;
         overflow: auto;
-        padding-top: 100px;
+        padding-top: 400px;
         padding-left:60px;
         padding-right: 50px;
         scroll-behavior: smooth
@@ -163,8 +163,8 @@
           overflow:hidden;
         }
         .center{
-          position:absolute;
-          top: 82%;
+          position: fixed;
+          top: 20%;
          
           left:50%;
          transform:translate(-50%,-50%);
