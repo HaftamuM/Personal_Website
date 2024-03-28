@@ -15,6 +15,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        
         background: rgb(255, 255, 255);
         width: 100vw;
         height: 100vh;
@@ -24,6 +25,7 @@
         content: '';
         left: 80px;
         height: 100%;
+        
         position: absolute;
         width: 150px;
         z-index: 100;
@@ -41,21 +43,23 @@
         background: linear-gradient(90deg, rgba(242, 243, 248,0) 0%, rgb(255, 255, 255) 100%);
     }
     .btn {
+        
         min-width: 60px;
-        height: 60px;
-        border-radius: 20px;
-        background: #e6e4e4;
+       
+        border-radius: 40px;
+        background: #ffffff;
         border: 0px;
         outline: none;
         cursor: pointer;
         z-index: 200;
+        padding-top: 400px;
         margin: 10px;
         box-shadow: 0px 0px 0px 0px rgba(0,0,0,.08);
         transition: all .25s ease;
     }
     .btn:hover {
         transform: translate(0, -10px);
-        box-shadow: 0px 17px 35px 0px rgba(0,0,0,.07);
+        box-shadow: 0px 0px 0px 0px rgba(255, 254, 254, 0.07);
     }
     .btn i {
         font-size: 1.6rem;
@@ -164,7 +168,7 @@
         }
         .center{
           position: fixed;
-          top: 20%;
+          top: 18%;
          
           left:50%;
          transform:translate(-50%,-50%);
