@@ -1,4 +1,4 @@
-> ## Responsive Portfolio Website Mrinmoy
+> ## Responsive Portfolio Website Haftamu M
 
 
 - Responsive Personal Portfolio Website Using HTML CSS & JavaScript
