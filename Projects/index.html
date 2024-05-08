@@ -8,53 +8,58 @@
 
 </head>
 
-<body><!-- Start-->
-  <nav>
-		<ul>
-			<li style="float:left"><img src="/image tool logo.jpg" class="logo" alt="logo"></li>
-			<li style="float:left"><a href="#" class="title">Ai Image Tool</a></li>
-			<li><a class="active" href="#about">About</a></li>
-			<li><a href="#random">Random</a></li>
-			<li><a href="#editor">Editor</a></li>
-			<li><a href="#search">Search</a></li>
-			<li><a href="#generate">Generate</a></li>
-			<li><a href="#home">Home</a></li>
-			<!--1.Remove background
-			    2. Formate change e.g. png to jpg 
-			-->
-		</ul>
-	</nav>
+<body>
+<!-- partial:index.partial.html -->
+<nav>
+  <ul>
+    <li style="float:left"><img src="/image tool logo.jpg" class="logo" alt="logo"></li>
+    <li style="float:left"><a href="#" class="title">Ai Image Tool</a></li>
+    <li><a class="active" href="#about">About</a></li>
+    <li><a href="#random">Random</a></li>
+    <li><a href="#editor">Editor</a></li>
+    <li><a href="#search">Search</a></li>
+    <li><a href="#generate">Generate</a></li>
+    <li><a href="#home">Home</a></li>
+    <!--1.Remove background
+        2. Formate change e.g. png to jpg 
+    -->
+  </ul>
+</nav>
+
+
 
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-up"></i></button>
 
-	<footer>
-		&copy;2023 India, All Rights Reserved by &nbsp;<i class="fa-brands fa-github fa-beat" style="color: #32e10e;"></i> &nbsp; <a href="https://github.com/ambresh20" class="namelink">Ambresh</a>  
-	</footer>
 
-	<script src="https://kit.fontawesome.com/13404514da.js" crossorigin="anonymous"></script>
-	<script>
-		// Get the button
-		let mybutton = document.getElementById("myBtn");
-		
-		// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
-		
-		function scrollFunction() {
-		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			mybutton.style.display = "block";
-		  } else {
-			mybutton.style.display = "none";
-		  }
-		}
-	
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-		  document.body.scrollTop = 0;
-		  document.documentElement.scrollTop = 0;
-		}
-	</script>
-  <!--end-->
-<!-- partial:index.partial.html -->
+<footer>
+  &copy;2023 India, All Rights Reserved by &nbsp;<i class="fa-brands fa-github fa-beat" style="color: #32e10e;"></i> &nbsp; <a href="https://github.com/ambresh20" class="namelink">Ambresh</a>  
+</footer>
+
+
+
+<script src="https://kit.fontawesome.com/13404514da.js" crossorigin="anonymous"></script>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- partial -->
 <div class="wrapper">
   <div class="header">
     <h1 class="header__title">List of Projects</h1>
