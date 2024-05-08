@@ -7,7 +7,60 @@
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
-<body>
+<body><!-- the log and nav-->
+  <header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">Haftamu</a>
+
+        <div data-aos="fade-in" class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+                <li class="nav__items">
+                    <a href="#home" class="nav__link active-link">
+                        <i class="uil uil-estate nav__icon"></i> Home
+                    </a>
+                </li>
+
+                <li class="nav__items">
+                    <a href="#about" class="nav__link ">
+                        <i class="uil uil-user nav__icon"></i> About
+                    </a>
+                </li>
+                <li class="nav_items">
+                    <a href="#certificate" class="nav__link ">
+                        <i class="uil uil-file nav__icon"></i> Certications
+                    </a>
+                </li>
+                <li class="nav_items">
+                    <a href="#skills" class="nav__link ">
+                        <i class="uil uil-file nav__icon"></i> Skills
+                    </a>
+                </li>
+
+                <li class="nav__items">
+                    <a href="#portfolio" class="nav__link ">
+                        <i class="uil uil-briefcase-alt nav__icon"></i> Portfolio
+                    </a>
+                </li>
+                <li class="nav__items">
+                    <a href="#portfolio" class="nav__link ">
+                        <i class="uil uil-briefcase-alt nav__icon"></i> contact
+                    </a>
+                </li>
+            </ul>
+            <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+            <!--Theme Change button-->
+            <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- end of nav-->
 <!-- partial:index.partial.html -->
 <div class="wrapper">
   <div class="header">
@@ -21,15 +74,14 @@
     <div class=" card [ is-collapsed ] ">
       <div class="card__inner [ js-expander ]">
       <span>H-Money</span>
-      <img src="./H-Money1.PNG" alt="Logo" width="80" height="80">
+      <img src="./H-Money1.png" width="80" height="80">
       </div>
       <div class="card__expander">
         <i class="fa fa-close [ js-collapser ]"></i>
-        <img src="./H-Money.PNG" alt="landing page" width="80" height="80">
-        A payroll system aims to simplify and automate the payroll management process, ensuring accuracy, efficiency, and compliance with regulatory requirements
-        <a href="https://github.com/HaftamuM/Payroll_System" target="_blank" class="home__social-icon">
-          <i class="uil uil-github-alt"></i>
-      </a>
+        <img src="./H-Money.PNG" alt="landing page" width="160" height="160">
+        <p style="text-indent: 10px;">A payroll system aims to simplify and automate the payroll management process, ensuring accuracy, efficiency, and compliance with regulatory requirements
+        </p>
+        <i class="fa-brands fa-github"></i>
       
       </div>
     </div>
