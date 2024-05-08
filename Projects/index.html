@@ -7,60 +7,53 @@
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
-<body><!-- the log and nav-->
-  <header class="header" id="header">
-    <nav class="nav container">
-        <a href="#" class="nav__logo">Haftamu</a>
 
-        <div data-aos="fade-in" class="nav__menu" id="nav-menu">
-            <ul class="nav__list grid">
-                <li class="nav__items">
-                    <a href="#home" class="nav__link active-link">
-                        <i class="uil uil-estate nav__icon"></i> Home
-                    </a>
-                </li>
+<body><!-- Start-->
+  <nav>
+		<ul>
+			<li style="float:left"><img src="/image tool logo.jpg" class="logo" alt="logo"></li>
+			<li style="float:left"><a href="#" class="title">Ai Image Tool</a></li>
+			<li><a class="active" href="#about">About</a></li>
+			<li><a href="#random">Random</a></li>
+			<li><a href="#editor">Editor</a></li>
+			<li><a href="#search">Search</a></li>
+			<li><a href="#generate">Generate</a></li>
+			<li><a href="#home">Home</a></li>
+			<!--1.Remove background
+			    2. Formate change e.g. png to jpg 
+			-->
+		</ul>
+	</nav>
 
-                <li class="nav__items">
-                    <a href="#about" class="nav__link ">
-                        <i class="uil uil-user nav__icon"></i> About
-                    </a>
-                </li>
-                <li class="nav_items">
-                    <a href="#certificate" class="nav__link ">
-                        <i class="uil uil-file nav__icon"></i> Certications
-                    </a>
-                </li>
-                <li class="nav_items">
-                    <a href="#skills" class="nav__link ">
-                        <i class="uil uil-file nav__icon"></i> Skills
-                    </a>
-                </li>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-up"></i></button>
 
-                <li class="nav__items">
-                    <a href="#portfolio" class="nav__link ">
-                        <i class="uil uil-briefcase-alt nav__icon"></i> Portfolio
-                    </a>
-                </li>
-                <li class="nav__items">
-                    <a href="#portfolio" class="nav__link ">
-                        <i class="uil uil-briefcase-alt nav__icon"></i> contact
-                    </a>
-                </li>
-            </ul>
-            <i class="uil uil-times nav__close" id="nav-close"></i>
-        </div>
+	<footer>
+		&copy;2023 India, All Rights Reserved by &nbsp;<i class="fa-brands fa-github fa-beat" style="color: #32e10e;"></i> &nbsp; <a href="https://github.com/ambresh20" class="namelink">Ambresh</a>  
+	</footer>
 
-        <div class="nav__btns">
-            <!--Theme Change button-->
-            <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="uil uil-apps"></i>
-            </div>
-        </div>
-    </nav>
-</header>
-<!-- end of nav-->
+	<script src="https://kit.fontawesome.com/13404514da.js" crossorigin="anonymous"></script>
+	<script>
+		// Get the button
+		let mybutton = document.getElementById("myBtn");
+		
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+	
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+  <!--end-->
 <!-- partial:index.partial.html -->
 <div class="wrapper">
   <div class="header">

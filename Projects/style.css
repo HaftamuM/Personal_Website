@@ -169,3 +169,89 @@ body {
     width: calc(200% + 30px);
   }
 }
+/* Navigation bar Styles  */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+  
+li {
+	float: right;
+}
+  
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 34px 20px;
+	text-decoration: none;
+}
+  
+li a:hover:not(.title){
+	background-color: #111;
+}
+/* li a:hover:not(.active) {
+	background-color: #111;
+} */
+  
+/* .active {
+	background-color: #04AA6D;
+} */
+
+.logo{
+	cursor: pointer;
+	height: 90px;
+	width: 90px;
+	border-radius: 5rem;
+}
+
+.title{
+	font-size: 2rem;
+	color: aqua;
+}
+/*Navigation style End */
+
+
+
+/* Top Button */
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 99;
+	font-size: 40px;
+	border: none;
+	outline: none;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 50%;
+}
+  
+#myBtn:hover {
+	background-color: #555;
+}
+
+/* Footer Style   */
+footer{
+	position:absolute;
+	bottom: 0%;
+	background-color: #0b0028;
+	color: whitesmoke;
+	height: 10vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+  
+.namelink{
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: aqua;
+}
